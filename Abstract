@@ -1,0 +1,30 @@
+Abstract 
+Education providers in the technical field usually receive large numbers of requests by students, 
+parents, and personnel, particularly during important stages of the academic year, like admissions, 
+exams, and placement. These investigations are usually made with the use of traditional methods 
+(calls, email, in-person visits) which are all time-consuming, frequently redundant and cause an 
+enormous amount of workload on the administrative staff. Parallel to this is the fact that students 
+automatically seek the right information of materials that are syllabus related, quickly and 
+anywhere. Meeting all the needs will still involve a supportive and trustworthy process that is 
+capable of automating discrete interactions and improving the service quality. 
+In order to overcome this operational problem, an AI-chatbot will be applied to the project to 
+support students, specifically in the setting within technical education. The system combines a 
+React frontend to communicate with the user and FastAPI on the backend, that makes an inquiry 
+through a secure process. The heart of the deployed solution will be Google Gemini (Large 
+Language Model) as the chatbot and syllabus information of the university as the data source, and a 
+list of frequently asked questions to deliver context-specific solutions, directly associated with the 
+questions of students, parents or the staff. As a group implementing it, we talked about the different 
+structures we would be required to implement, that would guarantee clarity in functionality of the 
+system: User Interface, Chatbot Engine (AI/NLP), Knowledge Base, Backend/API, Admin 
+Dashboard, and Deployment and Maintenance. By locating these silos to implement, the following 
+modules have an additional opportunity to develop, and organic growth is guaranteed. The other 
+environmental factors to further protect applications are API key management; mode to maintain 
+dummy data and CORS middleware to ease integration. 
+The first step in the implementation was to make the backend create a functional /ask API endpoint 
+that could accept student queries and process them to provide the option to integrate the Gemini 
+API and provide information in the form of the JSON format. This endpoint has been integrated 
+with the frontend and enables real-time communication between the chatbot and the frontend 
+through a web interface. Preliminary testing on the systems with dummy and natural questions 
+shows that the system could answer many questions and produce natural language responses, which 
+agree with the provided context. The results show that the architecture and the integration approach 
+are so far viable.
